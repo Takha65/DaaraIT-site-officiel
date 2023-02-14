@@ -1,11 +1,9 @@
 :root {
-  --bluee: #024f5c;
-  /* #08468a #141e38; */
-  --white: #ffffff;
-  --gray: #f9f9f9;
-  --planCard: linear-gradient(210.41deg, #fa5042 1.14%, #ffa739 100.75%);
-  --shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-  --imgShadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-  --vert: #48C9B0;
-  --blue: #154360;
+  --bluePrimary : #0C1F3C;
+  --blueAccent : #2359AD;
+  --blueSecondary : #006FCE;
+  --greyPrimary : #F2F2F2;
+  --greySecondary : #E2E2E2 ;
+  --white : #FFF;
+
 }
