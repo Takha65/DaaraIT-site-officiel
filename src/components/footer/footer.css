@@ -1,0 +1,62 @@
+footer {
+    background-color: #1876B0;
+  
+    /* position:fixed; */
+    font-size: 20px;
+   
+   
+  
+  }
+  
+  input {
+    font-size: auto;
+  }
+  
+  #espace {
+    margin-top: 2rem;
+  }
+  
+  h4 {
+    color: aliceblue;
+    margin-bottom: 2rem;
+  }
+  
+  /* #map{
+      height: 13rem;
+      width: 78rem
+   
+    } */
+  #bas {
+    display: flex;
+    flex-direction: row;
+    margin: 25px;
+    align-items: first baseline;
+    background-color: aliceblue;
+  border-radius: 10px;
+  }
+  
+  p {
+    text-align: center;
+    font-size: small;
+  }
+  
+  h3 {
+    padding: 4rem;
+    font-size: medium;
+   
+  }
+  iframe{
+    padding: 5rem;
+width: 100%;
+height: 100%;
+   
+  }
+  
+  button {
+    float: right;
+    margin-top: 10px;
+  }
+  
+  #boutonbas {
+    margin: 1rem;
+  }
