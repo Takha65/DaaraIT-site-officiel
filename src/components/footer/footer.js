@@ -41,7 +41,7 @@ export const Footer = () =>{
                     </div>
                     <div className='col-md-6'>
 
-                        <iframe id="map" src="https://maps.google.com/maps?;hl=en&amp;q=Dakar%2C%20vdn+(Title)&amp;ie=UTF8&amp;t=p&amp;z=16&amp;iwloc=B&amp;output=embed" scrolling="no" ></iframe>
+                    <iframe id="map" src="https://maps.google.com/maps?width=900&amp;height=640&amp;hl=en&amp;q=Dakar%2C%20vdn+(Title)&amp;ie=UTF8&amp;t=p&amp;z=16&amp;iwloc=B&amp;output=embed" scrolling="no" ></iframe>
 
                         {/* <p>@{new Date().getFullYear()}     Tous droit reservees</p> */}
                     </div>
