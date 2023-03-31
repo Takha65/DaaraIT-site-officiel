@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import logo from './logo.svg';
 import './App.css';
 
@@ -18,6 +19,17 @@ function App() {
           Learn React
         </a>
       </header>
+=======
+
+import './App.css';
+import Commissions from './components/commissions/commissions';
+import CommissionsDetails from './components/commissions/commissions-detaills';
+
+function App() {
+  return (
+    <div className="app h-[100%]">
+        <Commissions/>
+>>>>>>> master
     </div>
   );
 }
