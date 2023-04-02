@@ -232,7 +232,7 @@ function App() {
                 elit. Commodi quia temporibus autem eligendi, molestias
                 doloribus, dolorum cumque vel illo odio tempora quos praesentium
                 impedit nostrum, in rerum neque dignissimos expedita? Lorem
-                ipsum dolor sit amet consectetur adipisicing elit. Quia alias at
+                ipsum dolor sit amet consectetur adixpisicing elit. Quia alias at
                 laudantium ab numquam, porro magnam corrupti! Nihil, quasi
                 similique, deserunt quae labore inventore pariatur hic, nobis
                 molestiae dolore animi. Lorem ipsum dolor sit amet consectetur
