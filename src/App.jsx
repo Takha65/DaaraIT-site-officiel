@@ -1,18 +1,21 @@
-import React from 'react'
-import './App.css'
-import HomeCommission from './components/commissions/homeCommission';
+import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import './App.css';
+import Home from './pages/home/home';
+import Events from './pages/events/Events';
 
 import AppTemplate from './layouts/AppTemplate';
 
 function App() {
   return (
-    <div className="App">
-         
-       <AppTemplate>
-          <h1>Partie slide</h1>
-       </AppTemplate>
-        <HomeCommission />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<AppTemplate />}>
+          <Route index element={<Home />} />
+          <Route path="evenements" element={<Events />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
