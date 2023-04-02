@@ -1,5 +1,5 @@
 import React from 'react';
-import HomeCommission from './../../components/commissions/homeCommission';
+import HomeCommission from '../../components/commissions/homeCommission';
 
 const home = () => {
   return (

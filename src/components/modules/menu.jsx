@@ -46,8 +46,7 @@ const Menu = () => {
     </div>
   );
 };
-
-<<<<<<< HEAD
+/*
 
     return (
         <div className='fixed z-[100] top-0 w-full h-[45px] flex items-center justify-between px-8 text-sm text-gray-900 bg-white shadow-xl'>
@@ -64,9 +63,6 @@ const Menu = () => {
             </div>
         </div>
     )
-}
+*/
 
 export default Menu
-=======
-export default Menu;
->>>>>>> 2afd23b4457a7a5e079f3be5a232290b2451eaac
