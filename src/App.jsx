@@ -35,23 +35,11 @@ function App() {
         " Lorem ipsum dolor sit amet consectetur adipisicing Soluta tenetur.",
     },
     {
-      icon: IconHierarchy2,
-      title: "Organisation",
-      description:
-        " Lorem ipsum dolor sit amet consectetur adipisicing Soluta tenetur.",
-    },
-    {
       icon: IconLanguage,
       title: "Anglais",
       description:
         " Lorem ipsum dolor sit amet consectetur adipisicing Soluta tenetur.",
-    },
-    {
-      icon: IconMicrophone2,
-      title: "Communication",
-      description:
-        " Lorem ipsum dolor sit amet consectetur adipisicing Soluta tenetur.",
-    },
+    }
   ];
 
   return (
