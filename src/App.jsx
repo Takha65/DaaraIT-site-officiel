@@ -1,20 +1,20 @@
 import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import HomeCommission from "./components/commissions/homeCommission";
-import HeaderSection from "./components/headerSection/headerSection";
-
+import Home from "./pages/home/home";
+import Events from "./pages/events/Events";
 import AppTemplate from "./layouts/AppTemplate";
-import Home from "./pages/home";
 
 function App() {
   return (
-    <div className="App">
-      <AppTemplate>
-        <HeaderSection />
-        {/* <HomeCommission /> */}
-        <Home />
-      </AppTemplate>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<AppTemplate />}>
+          <Route index element={<Home />} />
+          <Route path="evenements" element={<Events />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
