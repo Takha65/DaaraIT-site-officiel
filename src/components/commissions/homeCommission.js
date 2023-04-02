@@ -4,7 +4,7 @@ import {commissions} from '../../data/commission'
 
 function HomeCommission() {
     return ( 
-        <Container>
+        <Container style={{}}>
             <TitleComponent title={commissions.title}/>
             <p>{commissions.desc}</p> 
             <div class="grid grid-cols-3 gap-3 md:grid-cols-3 sm:grid-cols-12">
