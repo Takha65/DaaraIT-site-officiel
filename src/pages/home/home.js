@@ -1,11 +1,13 @@
-function Banner() {
-    return <h1>La maisoeen jungle</h1>
-}
+import React from 'react';
+import HomeCommission from './../../components/commissions/homeCommission';
 
+const home = () => {
+  return (
+    <div className="w-full h-screen">
+      <div>Banner</div>
+      <HomeCommission />
+    </div>
+  );
+};
 
-// nav bar component with 4 links Home, About, Events, contact
-// Path: daaraitsite/src/pages/home/home.js, 
-//      
-
-
-export default Banner
+export default home;
