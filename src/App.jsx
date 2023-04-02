@@ -195,8 +195,8 @@ function App() {
           >
             Le mot du president
           </h1>
-          <div className="grid grid-cols-3 my-[3rem] gap-7">
-            <div className="h-[25rem]">
+          <div className="grid grid-cols-3 md:grid-cols-3 my-[3rem] gap-7">
+            <div className="">
               <img
                 src={image}
                 alt=""
@@ -377,6 +377,7 @@ function App() {
             </button>
           </div>
         </div>
+
       </AppTemplate>
     </div>
   );
