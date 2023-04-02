@@ -11,6 +11,7 @@ import {
   IconSearch,
 } from "@tabler/icons-react";
 import Input from "../../components/forms/input";
+import HeaderSection from "../../components/headerSection/headerSection";
 
 const home = () => {
   const minCard = [
@@ -54,8 +55,9 @@ const home = () => {
 
   return (
     <div className="w-full h-screen">
-      <div>Banner</div>
-      <HomeCommission />
+      {/* <div>Banner</div> */}
+      {/* <HomeCommission /> */}
+      <HeaderSection />
       <div>
         {/* Part 1 */}
         <div className="container-xl  bg-gray-50 px-[4rem] py-[5rem]">
