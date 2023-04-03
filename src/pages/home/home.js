@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-import React from 'react';
-import HomeCommission from '../../components/commissions/homeCommission';
-=======
 import React from "react";
 import HomeCommission from "./../../components/commissions/homeCommission";
 import image from "../../images/IMG_8278.jpg";
@@ -16,7 +12,6 @@ import {
 } from "@tabler/icons-react";
 import Input from "../../components/forms/input";
 import HeaderSection from "../../components/headerSection/headerSection";
->>>>>>> c1db2e30bf65f54150283e7f625b04cee5550caa
 
 const home = () => {
   const minCard = [

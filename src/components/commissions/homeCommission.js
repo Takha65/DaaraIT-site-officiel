@@ -1,5 +1,5 @@
-import Container from "../modules/container";
-import TitleComponent from "../modules/title";
+import Container from "../../components/modules/container";
+import TitleComponent from "../../components/modules//title";
 import {commissions} from '../../data/commission'
 
 function HomeCommission() {
