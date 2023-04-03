@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   height: 25em;
-  align-items: end;
+  align-items: flex-end;
   justify-content: center;
 }
 .bg {
