@@ -1,22 +1,25 @@
 import React from 'react'
-
 import img from "../../ressources/images/commission.png"
 import Tab from "./Tab";
 import { Data } from './data';
 
-import SideMenu from '../modules/sidemenu'
+import SideMenu from '../../components/modules/sidemenu'
 import {ReactComponent as RightArrow} from "../../ressources/icons/right-arrow.svg"
 import CommissionHeader from "../../ressources/images/commission.png"
-import Menu from "../modules/menu"
-import Footer from '../modules/footer'
+import Menu from "../../components/modules/menu"
+import Footer from '../../components/modules/footer'
 
 const Commissions = () => {
   return (
     <div className='relative w-full h-screen'>
-      <Menu/>
       <div className='corps flex'>
+      {/*
+            <Menu/>
+
         <SideMenu/>
-        <div className='content w-full ml-[50px]'>
+        */
+      } 
+        <div className='content w-full ml-[0px]'>
           {/* header */}
           <div className="relative w-full h-[290px]">
             <img className='h-full w-full' src={CommissionHeader} alt="" />

@@ -72,7 +72,7 @@ const home = () => {
         </div>
 
         {/* Part 6 */}
-        <div className="container-xl  bg-gray-100 px-[4rem] py-[5rem] flex items-center justify-between">
+         <div className="container-xl  bg-gray-100 px-[4rem] py-[5rem] flex items-center justify-between">
           <h1
             className={
               "text-[1rem] font-[700] border-l-[10px] border-blue-500 px-6 "
@@ -88,7 +88,9 @@ const home = () => {
               Envoyer
             </button>
           </div>
-        </div>
+        </div> 
+
+        
       </div>
     </div>
   );
