@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <footer class="bg-[#0C1F3C] w-full md:h-[400px] h-[500px] flex items-center ">
-      <div class="mx-auto container-xl flex justify-center items-center">
+    <footer class="w-full md:h-[500px] h-[650px]">
+      <div class="bg-[#0C1F3C] mx-auto w-full md:h-[450px] h-[600px] flex justify-center items-center">
         <div class="grid grid-cols-2 md:gap-[200px] gap-6   lg:py-8 md:grid-cols-4">
           <div>
             <ul class="text-white font-medium">
@@ -123,6 +123,11 @@ const Footer = () => {
             </ul>
           </div>
         </div>
+      </div>
+      <div class="bg-white mx-auto w-full h-[50px]  flex justify-center items-center">
+        <span class="text-md  text-[#000000] dark:text-gray-300 sm:text-center">
+          © Copyright 2023 <Link to="#">Daara-it</Link>. All Rights Reserved.
+        </span>
       </div>
     </footer>
   );

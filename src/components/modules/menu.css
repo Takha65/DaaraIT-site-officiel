@@ -2,7 +2,8 @@ nav {
   text-align: center;
 }
 a,
-a > span {
+a > span,
+footer > div > span {
   font-family: sans-serif;
   font-size: 16px;
   font-weight: 500;
