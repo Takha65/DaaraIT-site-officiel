@@ -1,17 +1,19 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import Home from "./pages/home/home";
-import Events from "./pages/events/Events";
 import AppTemplate from "./layouts/AppTemplate";
+import { navigationPaths } from "./routes/app.navigation";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<AppTemplate />}>
-          <Route index element={<Home />} />
-          <Route path="evenements" element={<Events />} />
+          {
+            navigationPaths.map((navigation, index)=> (
+              <Route key={index} path={navigation.path} element={navigation.element} />
+            ))
+          }
         </Route>
       </Routes>
     </BrowserRouter>

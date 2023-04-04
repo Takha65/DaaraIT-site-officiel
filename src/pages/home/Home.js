@@ -1,12 +1,12 @@
 import React from "react";
-import HomeCommission from "./../../components/commissions/homeCommission";
+import HomeCommission from "../../components/commissions/homeCommission";
 import Input from "../../components/forms/input";
 import HeaderSection from "../../components/headerSection/headerSection";
 import Actualites from "./Actualites";
 import MotDuPresident from "./MotDuPresident";
 import Partenaires from "./Partenaires";
 
-const home = () => {
+const Home = () => {
 
   return (
     <div className="w-full h-screen">
@@ -16,7 +16,7 @@ const home = () => {
       <div>
         {/* COmmissions 1 */}
         <HomeCommission />
-        {/* Actualites */}   
+        {/* Actualites */}
         <Actualites />
         {/* Mot du president 3 */}
         <MotDuPresident />
@@ -94,4 +94,4 @@ const home = () => {
   );
 };
 
-export default home;
+export default Home;

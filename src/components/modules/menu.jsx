@@ -1,6 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../images/logo-dit.png';
+import { sidebarRoutes } from '../../routes/sidebar.routes';
+import MenuItem from '../menu/MenuItem';
+import ResourceDataMap from '../ResourceDataMap';
 
 import './menu.css';
 
@@ -18,29 +21,13 @@ const Menu = () => {
           Daara IT
         </Link>
       </div>
-      <div className="list-items h-full flex items-center justify-cente">
+      <div className="list-items h-full flex items-center justify-cente ">
         <ul className="list h-full flex items-center justify-between">
-          <li className="item h-full flex items-center ml-8 px-2 py-[2px] hover:scale-110 hover:border-b-[2px] hover:border-black hover:pb-0 duration-150">
-            <Link to="/">Accueil</Link>
-          </li>
-          <li className="item h-full flex items-center ml-8 px-2 py-[2px] hover:scale-110 hover:border-b-[2px] hover:border-black hover:pb-0 duration-150">
-            <Link to="/a-propos">A propos</Link>
-          </li>
-          <li className="item h-full flex items-center ml-8 px-2 py-[2px] hover:scale-110 hover:border-b-[2px] hover:border-black hover:pb-0 duration-150">
-            <Link to="/forum">Forum</Link>
-          </li>
-          <li className="item h-full flex items-center ml-8 px-2 py-[2px] hover:scale-110 hover:border-b-[2px] hover:border-black hover:pb-0 duration-150">
-            <Link to="/evenements">Evenements</Link>
-          </li>
-          <li className="item h-full flex items-center ml-8 px-2 py-[2px] hover:scale-110 hover:border-b-[2px] hover:border-black hover:pb-0 duration-150">
-            <Link to="/commissions">Commissions</Link>
-          </li>
-          <li className="item h-full flex items-center ml-8 px-2 py-[2px] hover:scale-110 hover:border-b-[2px] hover:border-black hover:pb-0 duration-150">
-            <Link to="/Galerie">Galerie</Link>
-          </li>
-          <li className="item h-full flex items-center ml-8 px-2 py-[2px] hover:scale-110 hover:border-b-[2px] hover:border-black hover:pb-0 duration-150">
-            <Link to="/Contact">Contact</Link>
-          </li>
+          <ResourceDataMap 
+            resourceData={sidebarRoutes}
+            resourceItem={MenuItem}
+            resourceName="menuItem"
+          />
         </ul>
       </div>
     </div>
