@@ -1,5 +1,5 @@
 import React from "react";
-import HomeCommission from "./../../components/commissions/homeCommission";
+import HomeCommission from "../../components/commissions/homeCommission";
 import Input from "../../components/forms/input";
 import HeaderSection from "../../components/headerSection/headerSection";
 import Actualites from "./Actualites";
@@ -8,7 +8,8 @@ import Partenaires from "./Partenaires";
 import Contact from "./Contact";
 
 
-const home = () => {
+const Home = () => {
+
   return (
     <div className="w-full h-auto">
       {/* <div>Banner</div> */}
@@ -28,10 +29,9 @@ const home = () => {
         <Contact />
 
 
-        
       </div>
     </div>
   );
 };
 
-export default home;
+export default Home;
