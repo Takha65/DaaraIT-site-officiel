@@ -2,7 +2,7 @@ import TitleComponent from "../modules/title";
 import {minCard} from '../../data/commission'
 
 const HomeCommission=()=> {
-
+  
     return ( 
       <div className="container-xl  bg-gray-50 px-[4rem] py-[5rem]">
       <TitleComponent title="Non fortes commission" />
