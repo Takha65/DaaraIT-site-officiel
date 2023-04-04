@@ -1,5 +1,5 @@
 import React from "react";
-import HomeCommission from "./../../components/commissions/homeCommission";
+import HomeCommission from "../../components/commissions/homeCommission";
 import Input from "../../components/forms/input";
 import HeaderSection from "../../components/headerSection/headerSection";
 import Actualites from "./Actualites";
@@ -8,7 +8,8 @@ import Partenaires from "./Partenaires";
 import Contact from "./Contact";
 
 
-const home = () => {
+const Home = () => {
+
   return (
     <div className="w-full h-auto">
       {/* <div>Banner</div> */}
@@ -75,7 +76,7 @@ const home = () => {
         </div>
 
         {/* Part 6 */}
-         <div className="container-xl  bg-gray-100 px-[4rem] py-[5rem] flex items-center justify-between">
+        <div className="container-xl  bg-gray-100 px-[4rem] py-[5rem] flex items-center justify-between">
           <h1
             className={
               'text-[1rem] font-[700] border-l-[10px] border-blue-500 px-6 '
@@ -91,12 +92,12 @@ const home = () => {
               Envoyer
             </button>
           </div>
-        </div> 
+        </div>
 
-        
+
       </div>
     </div>
   );
 };
 
-export default home;
+export default Home;
