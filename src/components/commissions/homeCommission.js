@@ -1,14 +1,8 @@
-<<<<<<< HEAD
-import Container from "../../components/modules/container";
-import TitleComponent from "../../components/modules//title";
-import {commissions} from '../../data/commission'
-=======
 import TitleComponent from "../modules/title";
 import {minCard} from '../../data/commission'
 
 const HomeCommission=()=> {
->>>>>>> da5035c8e723cd617885756a104c2e4f35fecbc8
-
+  
     return ( 
       <div className="container-xl  bg-gray-50 px-[4rem] py-[5rem]">
       <TitleComponent title="Non fortes commission" />
