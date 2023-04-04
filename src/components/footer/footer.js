@@ -41,7 +41,7 @@ export const Footer = () => {
                                         <input type='text' {...register("objet")} placeholder='Objet' name='objet' className="form-control"></input>
                                     </div>
                                     <div className='col-6 form-group'>
-                                        <input type='text' id="telephone" {...register("telephone")} name="telephone" placeholder='Telephone' className="form-control"></input>
+                                        <input type='number' id="telephone" {...register("telephone")} name="telephone" placeholder='Telephone' className="form-control"></input>
                                     </div>
 
                                 </div><br />
