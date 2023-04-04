@@ -15,7 +15,7 @@ const Events = () => {
       <div className="eventsContent">
         <div className="filters">
           <div className="filter">
-            <span>Tous</span>
+            <span>ALL</span>
             <span>Nouveautés</span>
             <span>Populaires</span>
           </div>

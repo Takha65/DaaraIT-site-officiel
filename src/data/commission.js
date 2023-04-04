@@ -43,42 +43,41 @@ export const commissions = {
 }
 
 
-
 export const minCard = [
   {
     icon: IconBraces,
-    title: "Programmation",
+    title: 'Programmation',
     description:
-      " Lorem ipsum dolor sit amet consectetur adipisicing Soluta tenetur.",
+      ' Lorem ipsum dolor sit amet consectetur adipisicing Soluta tenetur.',
   },
   {
     icon: IconSearch,
-    title: "Pentest",
+    title: 'Pentest',
     description:
-      " Lorem ipsum dolor sit amet consectetur adipisicing Soluta tenetur.",
+      ' Lorem ipsum dolor sit amet consectetur adipisicing Soluta tenetur.',
   },
   {
     icon: IconAntennaBars5,
-    title: "Reseaux",
+    title: 'Reseaux',
     description:
-      " Lorem ipsum dolor sit amet consectetur adipisicing Soluta tenetur.",
+      ' Lorem ipsum dolor sit amet consectetur adipisicing Soluta tenetur.',
   },
   {
     icon: IconHierarchy2,
-    title: "Organisation",
+    title: 'Organisation',
     description:
-      " Lorem ipsum dolor sit amet consectetur adipisicing Soluta tenetur.",
+      ' Lorem ipsum dolor sit amet consectetur adipisicing Soluta tenetur.',
   },
   {
     icon: IconLanguage,
-    title: "Anglais",
+    title: 'Anglais',
     description:
-      " Lorem ipsum dolor sit amet consectetur adipisicing Soluta tenetur.",
+      ' Lorem ipsum dolor sit amet consectetur adipisicing Soluta tenetur.',
   },
   {
     icon: IconMicrophone2,
-    title: "Communication",
+    title: 'Communication',
     description:
-      " Lorem ipsum dolor sit amet consectetur adipisicing Soluta tenetur.",
+      ' Lorem ipsum dolor sit amet consectetur adipisicing Soluta tenetur.',
   },
 ];

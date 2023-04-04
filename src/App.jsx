@@ -5,6 +5,7 @@ import AppTemplate from "./layouts/AppTemplate";
 import { navigationPaths } from "./routes/app.navigation";
 
 function App() {
+
   return (
     <BrowserRouter>
       <Routes>
