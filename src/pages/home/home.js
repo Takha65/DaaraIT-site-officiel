@@ -1,22 +1,21 @@
-import React from "react";
-import HomeCommission from "./../../components/commissions/homeCommission";
-import Input from "../../components/forms/input";
-import HeaderSection from "../../components/headerSection/headerSection";
-import Actualites from "./Actualites";
-import MotDuPresident from "./MotDuPresident";
-import Partenaires from "./Partenaires";
+import React from 'react';
+import HomeCommission from './../../components/commissions/homeCommission';
+import Input from '../../components/forms/input';
+import HeaderSection from '../../components/headerSection/headerSection';
+import Actualites from './Actualites';
+import MotDuPresident from './MotDuPresident';
+import Partenaires from './Partenaires';
 
 const home = () => {
-
   return (
-    <div className="w-full h-screen">
+    <div className="w-full h-auto">
       {/* <div>Banner</div> */}
       {/* <HomeCommission /> */}
       <HeaderSection />
       <div>
         {/* COmmissions 1 */}
         <HomeCommission />
-        {/* Actualites */}   
+        {/* Actualites */}
         <Actualites />
         {/* Mot du president 3 */}
         <MotDuPresident />
@@ -27,7 +26,7 @@ const home = () => {
         <div className="container-xl  bg-blue-600 px-[4rem] py-[5rem]">
           <h1
             className={
-              "text-[1.3rem] font-[700] border-l-[10px] border-black px-6 text-white "
+              'text-[1.3rem] font-[700] border-l-[10px] border-black px-6 text-white '
             }
           >
             Pour nous contacter
@@ -50,7 +49,7 @@ const home = () => {
                     placeholder="Votre message ici..."
                     id=""
                     rows="4"
-                    style={{ padding: 10, fontSize: 14, outline: "none" }}
+                    style={{ padding: 10, fontSize: 14, outline: 'none' }}
                   ></textarea>
                   <div className="flex items-center justify-end mt-2">
                     <button className="px-2 py-1 bg-blue-600 w-[110px] text-white rounded-sm ">
@@ -64,7 +63,7 @@ const home = () => {
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv392py081PUJ4sOqA0_CaQ7G3ncuICzgq2w&usqp=CAU"
                   alt=""
                   className="w-full h-full"
-                  style={{ objectFit: "cover" }}
+                  style={{ objectFit: 'cover' }}
                 />
               </div>
             </div>
@@ -75,7 +74,7 @@ const home = () => {
          <div className="container-xl  bg-gray-100 px-[4rem] py-[5rem] flex items-center justify-between">
           <h1
             className={
-              "text-[1rem] font-[700] border-l-[10px] border-blue-500 px-6 "
+              'text-[1rem] font-[700] border-l-[10px] border-blue-500 px-6 '
             }
           >
             Abonnez vous a notre Newsletter pour vous tenir informer de nos
@@ -83,7 +82,7 @@ const home = () => {
           </h1>
 
           <div className="">
-            <Input type={"email"} placeholder={"Email"} />
+            <Input type={'email'} placeholder={'Email'} />
             <button className="px-2 py-[7px] bg-blue-600 w-[110px] text-white rounded-sm ml-3 ">
               Envoyer
             </button>
