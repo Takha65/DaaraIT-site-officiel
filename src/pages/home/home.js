@@ -1,10 +1,12 @@
-import React from 'react';
-import HomeCommission from './../../components/commissions/homeCommission';
-import Input from '../../components/forms/input';
-import HeaderSection from '../../components/headerSection/headerSection';
-import Actualites from './Actualites';
-import MotDuPresident from './MotDuPresident';
-import Partenaires from './Partenaires';
+import React from "react";
+import HomeCommission from "./../../components/commissions/homeCommission";
+import Input from "../../components/forms/input";
+import HeaderSection from "../../components/headerSection/headerSection";
+import Actualites from "./Actualites";
+import MotDuPresident from "./MotDuPresident";
+import Partenaires from "./Partenaires";
+import Contact from "./Contact";
+
 
 const home = () => {
   return (
@@ -23,6 +25,8 @@ const home = () => {
         <Partenaires />
 
         {/* Part 5 */}
+        <Contact />
+
         <div className="container-xl  bg-blue-600 px-[4rem] py-[5rem]">
           <h1
             className={
