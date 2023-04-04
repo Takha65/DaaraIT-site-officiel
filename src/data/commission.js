@@ -1,3 +1,12 @@
+import {
+  IconAntennaBars5,
+  IconBraces,
+  IconHierarchy2,
+  IconLanguage,
+  IconMicrophone2,
+  IconSearch,
+} from "@tabler/icons-react";
+
 export const commissions = {
     "title":"Nos fortes commissions ",
     "desc":`Je suis ravi de m'adresser à vous aujourd'hui en tant que président de notre organisation.
@@ -33,14 +42,7 @@ export const commissions = {
     ]
 }
 
-import {
-    IconAntennaBars5,
-    IconBraces,
-    IconHierarchy2,
-    IconLanguage,
-    IconMicrophone2,
-    IconSearch,
-  } from "@tabler/icons-react";
+
 
 export const minCard = [
     {
