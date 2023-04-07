@@ -2,6 +2,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^3.10.0",
     "@tabler/icons-react": "^2.13.1",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -12,6 +13,7 @@
     "react-alice-carousel": "^2.7.1",
     "react-bootstrap": "^2.7.2",
     "react-dom": "^18.2.0",
+    "react-hook-form": "^7.43.9",
     "react-icons": "^4.8.0",
     "react-scripts": "5.0.1",
     "sweetpagination": "^1.0.15",
