@@ -7,6 +7,7 @@ import Footer from '../components/modules/footer';
 
 const AppTemplate = () => {
   return (
+    
     <div className="relative w-full h-screen">
       <Menu />
       <div className="corps flex">
