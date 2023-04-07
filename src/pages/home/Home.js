@@ -11,7 +11,7 @@ import Contact from "./Contact";
 const Home = () => {
 
   return (
-    <div className="w-full h-auto">
+    <div className="w-full">
       {/* <div>Banner</div> */}
       {/* <HomeCommission /> */}
       <HeaderSection />
