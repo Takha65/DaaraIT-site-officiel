@@ -1,24 +1,24 @@
-import React from 'react';
+import React from "react";
 import {
   Navbar,
   MobileNav,
   Typography,
   Button,
   IconButton,
-} from '@material-tailwind/react';
-import logo from '../../images/logo-dit.png';
-import { sidebarRoutes } from '../../routes/sidebar.routes';
-import MenuItem from '../menu/MenuItem';
-import ResourceDataMap from '../ResourceDataMap';
+} from "@material-tailwind/react";
+import logo from "../../images/logo-dit.png";
+import { sidebarRoutes } from "../../routes/sidebar.routes";
+import MenuItem from "../menu/MenuItem";
+import ResourceDataMap from "../ResourceDataMap";
 
-import './menu.css';
+import "./menu.css";
 
 const Menu = () => {
   const [openNav, setOpenNav] = React.useState(false);
 
   React.useEffect(() => {
     window.addEventListener(
-      'resize',
+      "resize",
       () => window.innerWidth >= 960 && setOpenNav(false)
     );
   }, []);
@@ -39,7 +39,6 @@ const Menu = () => {
           as="a"
           href="#"
           className="mr-4 cursor-pointer flex items-center py-1.5 text-2xl font-semibold  text-gray-900"
-
         >
           <img src={logo} class="h-8 w-[50px] mr-3" alt="Flowbite Logo" /> Daara
           IT
@@ -90,7 +89,6 @@ const Menu = () => {
               </svg>
             )}
           </IconButton>
-
         </div>
       </div>
       <MobileNav open={openNav}>
