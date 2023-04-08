@@ -10,7 +10,7 @@ import './menu.css';
 const Menu = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <nav class="fixed z-[100] top-0 md:flex md:items-center  bg-white w-full  h-[60px] md:px-8 border-gray-200 dark:bg-gray-900">
+    <nav class="fixed z-[100] top-0 md:flex md:items-center  bg-white w-full  h-[60px] md:px-8 border-gray-200 dark:bg-gray-900 shadow-xl">
       <div class="w-full flex flex-wrap items-center justify-between mx-auto p-4">
         <Link to="/" class="flex items-center">
           <img src={logo} class="h-8 mr-3" alt="Flowbite Logo" />
@@ -51,6 +51,7 @@ const Menu = () => {
               resourceItem={MenuItem}
               resourceName="menuItem"
             />
+            {/* <a href="http://localhost:3000/#contact">Contact</a> */}
           </ul>
         </div>
       </div>
