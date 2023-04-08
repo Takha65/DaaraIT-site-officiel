@@ -1,4 +1,4 @@
-{
+export default motpresident = {
     "title":"Le mot du président",
     "Name":"",
     "fonction":"",
