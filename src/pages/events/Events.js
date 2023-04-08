@@ -15,7 +15,7 @@ const Events = () => {
       <div className="eventsContent">
         <div className="filters">
           <div className="filter">
-            <span>ALL</span>
+            <span>Tous</span>
             <span>Nouveautés</span>
             <span>Populaires</span>
           </div>
@@ -27,7 +27,7 @@ const Events = () => {
         <div className="pagination">
           <div className="grid-container">
             {currentPageData.map((item, i) => (
-              <Event key={i} event={item} />
+              <Event key={i} />
             ))}
           </div>
           <SweetPagination
