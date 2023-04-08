@@ -1,4 +1,4 @@
-import { EVENTS_PATH, GALLERY_PATH, HOME_PATH } from "./app.paths";
+import { EVENTS_PATH, GALLERY_PATH,COMMISSION_PATH, HOME_PATH } from "./app.paths";
 
 export const sidebarRoutes = [
     {
@@ -18,7 +18,7 @@ export const sidebarRoutes = [
         label: "Evenements"
     },
     {
-        to: '',
+        to: COMMISSION_PATH,
         label: "Commissions"
     },
     {
