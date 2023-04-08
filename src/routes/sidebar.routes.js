@@ -5,10 +5,10 @@ export const sidebarRoutes = [
         to: HOME_PATH,
         label: "Acceuil"
     },
-    {
-        to: '',
-        label: "A propos"
-    },
+    // {
+    //     to: '',
+    //     label: "A propos"
+    // },
     {
         to: '',
         label: "Forum"
