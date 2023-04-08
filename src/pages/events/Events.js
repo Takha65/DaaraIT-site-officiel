@@ -8,14 +8,14 @@ import { evenements } from '../../data/evenements';
 import Event from '../../components/event/Event';
 
 const Events = () => {
-  const [currentPageData, setCurrentPageData] = useState(new Array(3).fill());
+  const [currentPageData, setCurrentPageData] = useState(new Array(3));
   return (
     <div className="w-full h-auto pb-20">
       <Banner title="Evenements" img={BannerImg} />
       <div className="eventsContent">
         <div className="filters">
           <div className="filter">
-            <span>ALL</span>
+            <span>Tous</span>
             <span>Nouveautés</span>
             <span>Populaires</span>
           </div>
@@ -27,7 +27,7 @@ const Events = () => {
         <div className="pagination">
           <div className="grid-container">
             {currentPageData.map((item, i) => (
-              <Event key={i} event={item} />
+              <Event key={i} />
             ))}
           </div>
           <SweetPagination
