@@ -6,14 +6,18 @@
     mix-blend-mode: color-burn;
 }
 
+.alice-carousel{
+    overflow: hidden;
+}
+
 .alice-carousel__dots{
-    position: absolute;
-    right: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    top: 40%; right: 5%;
-  transform: translate(50%,-20%);
+    /* position: absolute; */
+    /* right: 20px; */
+    /* display: flex;
+    flex-direction: column; */
+    /* gap: 2rem;
+    top: 40%; right: 5%; */
+  /* transform: translate(50%,-20%); */
 }
 
 .alice-carousel__dots-item:not(.__custom) {
@@ -21,22 +25,25 @@
     height: 12px;
     cursor: pointer;
     border-radius: 0 !important;
-    background-color: #e0e4fb;
+    background-color: #fff;
+    border: 1px solid rgb(44, 73, 201);
 }
 .alice-carousel__prev-btn, .alice-carousel__next-btn{
     position: absolute;
-    right: 5%;
+    /* right: 5%; */
 }
 .alice-carousel__prev-btn{
-    top: 30%;
+    bottom: -2%;
+    left: -15%;
 }
 .alice-carousel__next-btn{
-    text-align: right;
-    bottom: 30%;
+    /* text-align: right; */
+    bottom: -2%;
+    right: -15%;
 }
 .alice-carousel__prev-btn-item, .alice-carousel__next-btn-item{
-    transform: rotate(90deg);
-    background-color: white;
+    /* transform: rotate(90deg); */
+    background-color: rgb(15, 97, 144);
     font-size: 1.1rem;
     /* padding:  0.5rem ;
     width: 30px;
@@ -47,8 +54,9 @@
     /* width: 30px;
     height: 50px; */
 }
-.alice-carousel__prev-btn-item span::after{
-    content: "<" !important;
+.alice-carousel__prev-btn-item span::after, .alice-carousel__next-btn-item span::after{
+    /* content: "<" !important; */
+    color: #fff;
     /* width: 30px;
     height: 40px; */
     /* background-color: red; */
@@ -57,5 +65,5 @@
 /* .alice-carousel__dots-item:not(.__custom)  */
 
 .alice-carousel__dots-item:not(.__custom):hover, .alice-carousel__dots-item:not(.__custom).__active {
-    background-color: #ec670f;
+    background-color: #106ef1;
 }
