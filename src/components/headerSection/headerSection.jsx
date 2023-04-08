@@ -50,7 +50,7 @@ function HeaderSection() {
                La communauté a pour but de promouvoir le secteur de l’informatique et ses domaines connexes et de monter le niveau de compétence de ses membres afin de mieux booster leur employabilité. <br />
                Elle vise à favoriser l’échange entre le monde universitaire, les entreprises et les partenaires afin de développer des réflexions prospectives dans de secteur.
             </p>
-            <button className={"bg-blue-500 text-white p-3 rounded-md flex"}>
+            <button className={"bg-gray-500 text-white p-3 rounded-md flex"} >
               <IconPlayerPlayFilled style={{ marginRight: 10 }} />
               Regarder une video
             </button>
