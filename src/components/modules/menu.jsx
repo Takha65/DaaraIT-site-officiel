@@ -1,30 +1,30 @@
-import React from "react";
+import React from 'react';
 import {
   Navbar,
   MobileNav,
   Typography,
   Button,
   IconButton,
-} from "@material-tailwind/react";
-import logo from "../../images/logo-dit.png";
-import { sidebarRoutes } from "../../routes/sidebar.routes";
-import MenuItem from "../menu/MenuItem";
-import ResourceDataMap from "../ResourceDataMap";
+} from '@material-tailwind/react';
+import logo from '../../images/logo-dit.png';
+import { sidebarRoutes } from '../../routes/sidebar.routes';
+import MenuItem from '../menu/MenuItem';
+import ResourceDataMap from '../ResourceDataMap';
 
-import "./menu.css";
+import './menu.css';
 
 const Menu = () => {
   const [openNav, setOpenNav] = React.useState(false);
 
   React.useEffect(() => {
     window.addEventListener(
-      "resize",
+      'resize',
       () => window.innerWidth >= 960 && setOpenNav(false)
     );
   }, []);
 
   const navList = (
-    <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 bg-white">
+    <ul className="mb-4 mt-2 flex flex-col md:gap-4 gap-1 md:p-0 p-4  lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 bg-white">
       <ResourceDataMap
         resourceData={sidebarRoutes}
         resourceItem={MenuItem}
@@ -54,7 +54,7 @@ const Menu = () => {
           </Button>
           <IconButton
             variant="text"
-            className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden  text-gray-900"
+            className="ml-auto h-6 w-6  mb-3 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden  text-gray-900"
             ripple={false}
             onClick={() => setOpenNav(!openNav)}
           >
