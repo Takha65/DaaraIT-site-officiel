@@ -8,6 +8,10 @@
 
 }
 
+a.active{
+  border-bottom: 3.5px solid #0C1F3C;
+}
+
 .bg-contacts{
   background-color: var(--blueSecondary);
 }
