@@ -53,7 +53,7 @@ export const evenements = [
   },
   {
     title: 'Atelier avec saxx',
-    subitle:
+    subtitle:
       'Daara IT , en partenariat avec Colombe Academy of Technology, première académie supérieure de cyberdéfense au Sénégal a proposé 2h de formation / découverte / méthodologie ',
     desc: 'et discussion ouverte autour de la cybersécurité animé par le célèbre Hacker franco-sénégalis Clément Domingo ( SaxX ) accueilli par Colombe Academy of Technologie dans ses locaux...',
     createdAt: '10-10-2021',
