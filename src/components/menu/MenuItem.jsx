@@ -1,18 +1,19 @@
-import React from 'react'
+import React from 'react';
 import { NavLink } from 'react-router-dom';
 // import { NavLink } from 'react-bootstrap'
 
-const MenuItem = ({menuItem}) => {
-    const {to, label} = menuItem
+const MenuItem = ({ menuItem }) => {
+  const { to, label } = menuItem;
   return (
-    <li 
-    className="item h-full flex items-center ml-8 px-2 py-[2px] hover:scale-110 hover:border-b-[2px] hover:border-black hover:pb-0 duration-150"
-    >
-        <NavLink to={to}>
-            {label}
-        </NavLink>
+    <li className="md:item md:flex md:items-center md:ml-6 md:px-2 md:py-[2px] md:hover:scale-110 md:hover:border-b-[4px] md:hover:border-black md:hover:pb-0 duration-150">
+      <NavLink
+        to={to}
+        class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+      >
+        {label}
+      </NavLink>
     </li>
-  )
-}
+  );
+};
 
-export default MenuItem
+export default MenuItem;

@@ -10,7 +10,7 @@ const Event = ({ event }) => {
       <div className="headerCard">
         <div>
           <span></span>
-          <h4>{event.title}</h4>
+          <h4>{event?.title}</h4>
         </div>
         <button>
           Partager
@@ -23,9 +23,9 @@ const Event = ({ event }) => {
           <span>Coding</span>
           <span>WebDev</span>
         </div>
-        <img src={event.image} alt="cardimage" className="cardimage" />
-        <p className="subtitle">{event.subTitle}</p>
-        <p className="description">{event.desc}</p>
+        <img src={event?.image} alt="cardimage" className="cardimage" />
+        <p className="subtitle">{event?.subtitle}</p>
+        <p className="description">{event?.desc}</p>
       </div>
       <div className="cardfooter">
         <button>En savoir plus</button>
