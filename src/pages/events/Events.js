@@ -33,7 +33,7 @@ const Events = () => {
           <SweetPagination
             currentPageData={setCurrentPageData}
             dataPerPage={9}
-            getData={evenements.data}
+            getData={evenements}
             navigation={true}
             getStyle={'style-2'}
           />
