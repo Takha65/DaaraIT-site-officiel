@@ -1,7 +1,8 @@
 import React from "react";
 import image from "../../images/IMG_8278.jpg";
-import AliceCarousel from 'react-alice-carousel';
-import './headersection.css'
+import AliceCarousel from "react-alice-carousel";
+import "./headersection.css";
+import { IconPlayerPlayFilled } from "@tabler/icons-react";
 
 function HeaderSection() {
   const handleDragStart = (e) => e.preventDefault();
@@ -12,16 +13,33 @@ function HeaderSection() {
   //   object-fit: contain;
   //   mix-blend-mode: color-burn;
 
-
-const items = [
-  <img src={image} className="w-full h-[38rem] object-cover img-slide" onDragStart={handleDragStart} role="presentation" alt="slide" />,
-  <img src={image} className="w-full h-[38rem] object-cover img-slide" onDragStart={handleDragStart} role="presentation" alt="slide" />,
-  <img src={image} className="w-full h-[38rem] object-cover img-slide" onDragStart={handleDragStart} role="presentation" alt="slide" />,
-];
+  const items = [
+    <img
+      src={image}
+      className="w-full h-[38rem] object-cover img-slide"
+      onDragStart={handleDragStart}
+      role="presentation"
+      alt="slide"
+    />,
+    <img
+      src={image}
+      className="w-full h-[38rem] object-cover img-slide"
+      onDragStart={handleDragStart}
+      role="presentation"
+      alt="slide"
+    />,
+    <img
+      src={image}
+      className="w-full h-[38rem] object-cover img-slide"
+      onDragStart={handleDragStart}
+      role="presentation"
+      alt="slide"
+    />,
+  ];
   return (
     <>
       <div className="container-xl h-[38rem] bg-white grid grid-cols-1 sm:grid-cols-1 md:grid-cols-5 lg:grid-cols-5 gap-10">
-        <div className="flex justify-center items-center h-full md:ml-8 p-[2.2rem] md:col-start-1 md:col-end-3 lg:col-start-1 lg:col-end-3">
+        <div className="flex justify-center items-center h-full md:ml-8 p-[1rem] md:col-start-1 md:col-end-3 lg:col-start-1 lg:col-end-3">
           <div>
             <h1 className={"text-[2.2rem] font-[600]"}>
               L'informatique plus qu'une passion, un{" "}
@@ -32,7 +50,8 @@ const items = [
                La communauté a pour but de promouvoir le secteur de l’informatique et ses domaines connexes et de monter le niveau de compétence de ses membres afin de mieux booster leur employabilité. <br />
                Elle vise à favoriser l’échange entre le monde universitaire, les entreprises et les partenaires afin de développer des réflexions prospectives dans de secteur.
             </p>
-            <button className={"bg-blue-500 text-white p-3 rounded-md"}>
+            <button className={"bg-blue-500 text-white p-3 rounded-md flex"}>
+              <IconPlayerPlayFilled style={{ marginRight: 10 }} />
               Regarder une video
             </button>
           </div>
