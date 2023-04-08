@@ -39,6 +39,7 @@ const Menu = () => {
           as="a"
           href="#"
           className="mr-4 cursor-pointer flex items-center py-1.5 text-2xl font-semibold  text-gray-900"
+
         >
           <img src={logo} class="h-8 w-[50px] mr-3" alt="Flowbite Logo" /> Daara
           IT
@@ -89,6 +90,7 @@ const Menu = () => {
               </svg>
             )}
           </IconButton>
+
         </div>
       </div>
       <MobileNav open={openNav}>

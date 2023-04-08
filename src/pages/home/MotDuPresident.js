@@ -6,7 +6,7 @@ const MotDuPresident =()=> {
         <div className="container-xl  bg-gray-50 px-[4rem] py-[5rem]">
           <TitleComponent title="Le mot du president" />
           <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-5 lg:grid-cols-5 gap-10">
-            <div className="md:col-start-1 md:col-end-6 lg:col-start-1 lg:col-end-3">
+            <div className=" h-[26rem] md:col-start-1 md:col-end-6 lg:col-start-1 lg:col-end-3">
               <img
                 src={image}
                 alt=""
