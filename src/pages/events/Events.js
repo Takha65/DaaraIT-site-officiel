@@ -27,7 +27,7 @@ const Events = () => {
         <div className="pagination">
           <div className="grid-container">
             {currentPageData.map((item, i) => (
-              <Event key={i} />
+              <Event key={i} event={item} />
             ))}
           </div>
           <SweetPagination
