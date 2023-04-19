@@ -5,6 +5,7 @@ import {ReactComponent as InstagramIcon} from "../../ressources/icons/instagram.
 import {ReactComponent as TwitterIcon} from "../../ressources/icons/twitter.svg"
 import {ReactComponent as YoutubeIcon} from "../../ressources/icons/youtube.svg"
 import {ReactComponent as HomeIcon} from "../../ressources/icons/home.svg"
+import {ReactComponent as LinkedInIcon} from "../../ressources/icons/linkedIn2.svg"
 
 const SideMenu = () => {
     return (

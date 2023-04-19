@@ -25,7 +25,7 @@ const Partenaires = ()=> {
           <TitleComponent title="Ils nous ont fait confiance" />
 
           <div className="my-[5rem]">
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-10">
               <div className="py-4 flex items-center justify-center shadow-lg">
                 <img className="w-[150px]" src={auf} alt="logo" />
               </div>
