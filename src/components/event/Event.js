@@ -5,6 +5,7 @@ import { AiFillCalendar } from 'react-icons/ai';
 import { GrView } from 'react-icons/gr';
 
 const Event = ({ event }) => {
+  console.log(event);
   return (
     <div className="grid-item">
       <div className="headerCard">

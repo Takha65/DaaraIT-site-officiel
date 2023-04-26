@@ -1,6 +1,5 @@
 import React from "react";
 import HomeCommission from "../../components/commissions/homeCommission";
-import Input from "../../components/forms/input";
 import HeaderSection from "../../components/headerSection/headerSection";
 import Actualites from "./Actualites";
 import MotDuPresident from "./MotDuPresident";
