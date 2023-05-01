@@ -20,7 +20,7 @@ export const evenements = [
     subtitle:
       'Dans le but de promouvoir la technologie au niveau national , Daara IT a organisé ce samedi 11 mars à SUPDECO CAMPUS THIÈS un Workshop sur la manipulation des données',
     desc: 'un phénomène qui est devenu très fréquent et qui peut affecter la façon dont les gens prennent des décisions, leur compréhension des événements actuels...',
-    createdAt: '10-10-2021',
+    createdAt: '11-03-2021',
     image: Zig4,
     views: 16,
   },
@@ -29,7 +29,7 @@ export const evenements = [
     subtitle:
       'En 5 jours, les étudiants se sont formés sur la prise en main du module Wifi d’espressif.Ce fut une formation très enrichissante, qui a débuté le lundi 24 Octobre et se termine le vendredi 28 Octobre 2022.',
     desc: 'Cela a permis aux participants d’avoir des notions de base en IOT, mais également sur la connectivité de ses différents composants.',
-    createdAt: '10-10-2021',
+    createdAt: '28-10-2022',
     image: Kenedy1,
     views: 16,
   },
@@ -38,7 +38,7 @@ export const evenements = [
     subtitle:
       'A la célébration de la 4ème édition du NDOGOU CODING, La communauté Daara IT a organisé  le 23 Avril 2022 un événement  riche en enseignement la programmation orientée objet au rendez-vous avec les formateurs de qualité.',
     desc: 'Ce fut des moments riches en acquisition de connaissances, d’ échanges entre passionnés IT avec ses différents ateliers notamment la programmation orientée objet animé par...',
-    createdAt: '10-10-2021',
+    createdAt: '23-04-2022',
     image: Ndogou1,
     views: 16,
   },
