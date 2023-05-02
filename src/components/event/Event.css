@@ -43,11 +43,17 @@
   flex-direction: column;
   gap: 17px;
 }
-.cardBody .category {
+.cardBody .category,
+.event__modal-content .category {
   display: flex;
   gap: 10px;
 }
-.cardBody .category > span {
+.event__modal-content .category {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.cardBody .category > span,
+.event__modal-content .category > span {
   font-family: sans-serif;
   font-size: 12px;
   font-weight: 600;
@@ -55,20 +61,29 @@
   border-radius: 3px;
   color: var(--white);
 }
-.cardBody .category > span:nth-child(1) {
+.cardBody .category > span:nth-child(1),
+.event__modal-content .category > span:nth-child(1) {
   background-color: var(--blueAccent);
 }
-.cardBody .category > span:nth-child(2) {
+.cardBody .category > span:nth-child(2),
+.event__modal-content .category > span:nth-child(2) {
   background-color: #3a8fc3;
 }
-.cardBody .category > span:nth-child(3) {
+.cardBody .category > span:nth-child(3),
+.event__modal-content .category > span:nth-child(3) {
   background-color: #87cefa;
 }
 .cardimage {
   width: 100%;
-  height: 170px;
+  height: 230px;
   object-fit: cover;
   border-radius: 3px;
+}
+.modalcardimage {
+  width: 100%;
+  object-fit: cover;
+  /* border-radius: 3px; */
+  margin-bottom: 1rem;
 }
 .subtitle {
   font-family: sans-serif;
@@ -79,7 +94,7 @@
 }
 .description {
   font-family: sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 24px;
   text-align: justify;
   margin-bottom: 20px;
@@ -116,4 +131,47 @@
 }
 .icon {
   color: #3a8fc3;
+}
+
+.event__modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.event__modal-content {
+  width: 700px;
+  position: relative;
+  background-color: #fff;
+  padding: 2.5rem 2.5rem 2.5rem;
+  border-radius: 0.5rem;
+}
+.modal__active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.event__modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1rem;
+  color: var(--blueSecondary);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 576px) {
+  .event__modal-content {
+    padding: 2.5rem 1.2rem 1.5rem;
+  }
 }
