@@ -1,39 +1,21 @@
-import React from "react";
-import img from "../../ressources/images/commission.png";
-import Tab from "./Tab";
-import { Data } from "./data";
-
+import React from 'react';
+import img from '../../ressources/images/commission.png';
+import Tab from './Tab';
+import { Data } from './data';
+import BannerImg from '../../ressources/images/commission.png';
 // import SideMenu from '../../components/modules/sidemenu'
-import { ReactComponent as RightArrow } from "../../ressources/icons/right-arrow.svg";
-import CommissionHeader from "../../ressources/images/commission.png";
 // import Menu from "../../components/modules/menu"
-import Footer from "../../components/modules/footer";
-import { commissions } from "../../data/commission";
+import Footer from '../../components/modules/footer';
+import { commissions } from '../../data/commission';
+import Banner from '../../components/Banner/Banner';
 
 const Commissions = () => {
   return (
     <div className="relative w-full h-screen">
       <div className="corps flex">
-        {/*
-            <Menu/>
-
-        <SideMenu/>
-        */}
         <div className="content w-full ml-[0px]">
           {/* header */}
-          <div className="relative w-full h-[290px]">
-            <img className="h-full w-full" src={CommissionHeader} alt="" />
-            <div className="absolute top-0 w-full h-full flex items-end justify-between px-12 py-8">
-              <p className="text-white text-3xl font-semibold">Commissions</p>
-              <div className="flex items-center">
-                <p className="text-white text-sm">DaaraIT</p>
-                <span className="w-[24px] h-[16px] mx-2 mt-1">
-                  <RightArrow />
-                </span>
-                <p className="text-white text-sm">Commissions</p>
-              </div>
-            </div>
-          </div>
+          <Banner title="Commissions" img={BannerImg} />
           {/* content */}
           <div className="w-full flex items-start justify-start bg-[#F2F2F2]">
             {/* menu */}
@@ -51,13 +33,13 @@ const Commissions = () => {
                             <div className="w-[300px] h-[120px] rounded overflow-hidden">
                               <img
                                 src={
-                                  tab?.image === "img1"
+                                  tab?.image === 'img1'
                                     ? img
-                                    : tab?.image === "img2"
+                                    : tab?.image === 'img2'
                                     ? img
-                                    : tab?.image === "img3"
+                                    : tab?.image === 'img3'
                                     ? img
-                                    : tab?.image === "img4"
+                                    : tab?.image === 'img4'
                                     ? img
                                     : img
                                 }
