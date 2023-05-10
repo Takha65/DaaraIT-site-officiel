@@ -49,3 +49,5 @@ export const evenements = [
     views: 16,
   },
 ];
+
+export const sortedEvents = evenements.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
