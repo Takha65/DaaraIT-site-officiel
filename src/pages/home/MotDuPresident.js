@@ -1,6 +1,6 @@
 import TitleComponent from "../../components/modules/title";
 import motpresident from "../../data/motdupresi";
-import image from "../../images/IMG_8278.jpg";
+import image from "../../images/Maria_PR.jpeg";
 // import motpresident from "../../data/motdupresi"
 
 const MotDuPresident =()=> {
@@ -13,7 +13,7 @@ const MotDuPresident =()=> {
                 src={image}
                 alt=""
                 className="h-full w-full"
-                style={{ objectFit: "cover" }}
+                style={{ objectFit: "fill" }}
               />
             </div>
             <div className="md:col-start-1 md:col-end-6 lg:col-start-3 lg:col-end-6">
@@ -23,9 +23,9 @@ const MotDuPresident =()=> {
                     "text-[1rem] font-[700] border-r-[5px] border-blue-500 pr-6 w-[2258x] mr-2"
                   }
                 >
-                  GERARD DACOSTA
+                  MARIÉTOU DIÉDHIOU
                 </h1>
-                <span className="text-[0.75rem]">President de Daara-IT</span>
+                <span className="text-[0.75rem]">Presidente de Daara-IT</span>
               </div>
 
               <p className="text-[0.84rem] my-4">

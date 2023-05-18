@@ -1,5 +1,8 @@
 import React from "react";
-import image from "../../images/IMG_8278.jpg";
+import cov1 from "../../images/slider/COV1.jpg";
+import cov2 from "../../images/slider/Cov2.jpg";
+import cov3 from "../../images/slider/COV3.jpg";
+import cov4 from "../../images/slider/COV4.jpeg";
 import AliceCarousel from "react-alice-carousel";
 import "./headersection.css";
 import { IconPlayerPlayFilled } from "@tabler/icons-react";
@@ -15,26 +18,33 @@ function HeaderSection() {
 
   const items = [
     <img
-      src={image}
+      src={cov1}
       className="w-full h-[38rem] object-cover img-slide"
       onDragStart={handleDragStart}
       role="presentation"
       alt="slide"
     />,
     <img
-      src={image}
+      src={cov2}
       className="w-full h-[38rem] object-cover img-slide"
       onDragStart={handleDragStart}
       role="presentation"
       alt="slide"
     />,
     <img
-      src={image}
+      src={cov3}
       className="w-full h-[38rem] object-cover img-slide"
       onDragStart={handleDragStart}
       role="presentation"
       alt="slide"
     />,
+    <img
+    src={cov4}
+    className="w-full h-[38rem] object-cover img-slide"
+    onDragStart={handleDragStart}
+    role="presentation"
+    alt="slide"
+  />,
   ];
   return (
     <>
