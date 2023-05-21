@@ -1,6 +1,5 @@
 
 import TitleComponent from "../../components/modules/title";
-import image2 from "../../images/Huawei-logo.png";
 import auf from "../../images/logo_partenaire/AUF.png" 
 import bakeli from "../../images/logo_partenaire/bakeli.png" 
 import colomb from "../../images/logo_partenaire/colomb.png" 

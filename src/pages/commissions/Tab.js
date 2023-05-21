@@ -24,7 +24,7 @@ const Tab = ({ children, state, active = 0 }) => {
     return () => {
       setActiveTab(state)
     }
-  }, [])
+  }, [state])
   
   return (
     <div className="w-full flex items-start justify-start bg-[#F2F2F2]">

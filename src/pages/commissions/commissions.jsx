@@ -1,7 +1,6 @@
 import React from 'react';
 import img from '../../ressources/images/commission.png';
 import Tab from './Tab';
-import { Data } from './data';
 import BannerImg from '../../ressources/images/commission.png';
 // import SideMenu from '../../components/modules/sidemenu'
 // import Menu from "../../components/modules/menu"

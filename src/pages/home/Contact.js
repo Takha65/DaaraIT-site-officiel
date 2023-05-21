@@ -1,4 +1,4 @@
-import { useForm, ValidationError } from '@formspree/react';
+import { useForm } from '@formspree/react';
 import "../../App.css"
 
 const ContactForm = ()=>{
@@ -55,7 +55,7 @@ const Contact = () => {
           <ContactForm />
           <div className="shadow-lg rounded-md col-span-2">
             <div className="w-full" >
-              <iframe  scrolling="no" marginheight="0" marginwidth="0"
+              <iframe title="Carte Google Maps" scrolling="no" marginheight="0" marginwidth="0"
                 src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=INSTITUT%20EDGE%20Route%20de%20la%20Pyrotechnie%20Prolong%C3%A9e+()&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
                 width="100%" height="273" frameborder="0"><a href="https://www.maps.ie/distance-area-calculator.html">measure area map</a></iframe></div>
           </div>

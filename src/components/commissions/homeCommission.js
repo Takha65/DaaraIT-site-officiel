@@ -1,5 +1,5 @@
 import TitleComponent from "../modules/title";
-import {commissions, minCard} from '../../data/commission'
+import {commissions} from '../../data/commission'
 import { Link } from "react-router-dom";
 
 const HomeCommission=()=> {
