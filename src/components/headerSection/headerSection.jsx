@@ -1,5 +1,5 @@
 import React from "react";
-import cov1 from "../../images/slider/COV1.jpg";
+import cov1 from "../../images/slider/COV1.webp";
 import cov2 from "../../images/slider/Cov2.jpg";
 import cov3 from "../../images/slider/COV3.jpg";
 import cov4 from "../../images/slider/COV4.jpeg";
