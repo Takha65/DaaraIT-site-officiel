@@ -13,7 +13,7 @@ import xarala from "../../images/logo_partenaire/xarala.png"
 
 const Partenaires = ()=> {
     return ( 
-        <div className="container-xl  bg-white px-[4rem] py-[5rem]">
+      <div className="container-xl  bg-white px-[2rem] py-[2rem] md:px-[4rem] md:py-[3rem]">
           {/* <h1
             className={
               "text-[1.3rem] font-[700] border-l-[10px] border-blue-500 px-6 "

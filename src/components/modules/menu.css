@@ -1,6 +1,9 @@
 nav {
   text-align: center;
 }
+a{
+  color: black;
+}
 a,
 a > span,
 footer > div > span {

@@ -5,7 +5,7 @@ import image from "../../images/Maria_PR.jpeg";
 
 const MotDuPresident =()=> {
     return ( 
-        <div className="container-xl  bg-gray-50 px-[4rem] py-[5rem]">
+      <div className="container-xl  bg-gray-50 px-[2rem] py-[2rem] md:px-[4rem] md:py-[3rem]">
           <TitleComponent title="Le mot du president" />
           <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-5 lg:grid-cols-5 gap-10">
             <div className=" h-[23rem] md:col-start-1 md:col-end-6 lg:col-start-1 lg:col-end-3">
