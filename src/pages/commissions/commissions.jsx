@@ -11,7 +11,7 @@ import Banner from '../../components/Banner/Banner';
 const Commissions = () => {
   return (
     <div className="relative w-full h-screen">
-      <div className="corps flex">
+      <div className="corps flex flex-wrap">
         <div className="content w-full ml-[0px]">
           {/* header */}
           <Banner title="Commissions" img={BannerImg} />
@@ -23,22 +23,20 @@ const Commissions = () => {
                 return (
                   <Tab.TabPane key={`Tab-${index}`} tab={tab.title}>
                     {/* details */}
-                    <div className="w-full pt-8">
-                      <div
-                        className={`w-full bg-white rounded-sm p-12 shadow-sm`}
-                      >
-                        <div className="w-full flex items-center pb-8 border-slate-100 border-b-[1px]">
-                          <div className="border-slate-100 border-r-[1px] pr-12">
+                    <div className="animate__animated animate__backInUp animate__delay-0.5s">
+                      <div className={`bg-white rounded-sm p-6 shadow-sm`}>
+                        <div className="flex flex-col md:flex-row items-center pb-8 border-slate-100 border-b-[1px]">
+                          <div className="border-slate-100 border-r-[1px] md:pr-12">
                             <div className="w-[300px] h-[120px] rounded overflow-hidden">
                               <img
                                 src={
-                                  tab?.image === 'img1'
+                                  tab?.image === "img1"
                                     ? img
-                                    : tab?.image === 'img2'
+                                    : tab?.image === "img2"
                                     ? img
-                                    : tab?.image === 'img3'
+                                    : tab?.image === "img3"
                                     ? img
-                                    : tab?.image === 'img4'
+                                    : tab?.image === "img4"
                                     ? img
                                     : img
                                 }
@@ -47,8 +45,8 @@ const Commissions = () => {
                               />
                             </div>
                           </div>
-                          <div className="px-12 flex flex-col items-start">
-                            <span className="mb-4 text-[2rem] font-semibold text-yellow-600">
+                          <div className="md:px-12 flex flex-col items-start">
+                            <span className="mb-4 text-[2rem] font-semibold text-yellow-600 text-center md:text-start">
                               {tab?.title}
                             </span>
                             {/* <span className='mb-4 text-sm font-medium text-[#2359AD]'>{tab?.sub_title}</span>

@@ -41,7 +41,7 @@ const ContactForm = ()=>{
 const Contact = () => {
 
   return (
-    <div id="contact" className="container-xl  bg-contacts px-[4rem] py-[5rem]">
+    <div id="contact" className="container-xl  bg-contacts px-[2rem] py-[2rem] md:px-[4rem] md:py-[3rem]">
       <h1
         className={
           "text-[1.3rem] font-[700] border-l-[10px] border-black px-6 text-white "

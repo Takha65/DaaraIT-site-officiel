@@ -7,8 +7,8 @@ const Actualites =()=>  {
 
 
     return ( 
-        <div className="container-xl  bg-white px-[4rem] py-[5rem]">
-          <TitleComponent title="Actualites" />
+      <div className="container-xl  bg-white px-[2rem] py-[2rem] md:px-[4rem] md:py-[3rem]">
+        <TitleComponent title="Actualités" />
           <div className="my-[5rem]" style={{ overflow: "hidden" }}>
             <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10"> 
               {events.map((event) => (

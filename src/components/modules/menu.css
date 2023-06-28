@@ -1,6 +1,14 @@
 nav {
   text-align: center;
 }
+a{
+  color: black;
+}
+footer a{
+  color: white;
+  font-size: 14px;
+  font-weight: 300;
+}
 a,
 a > span,
 footer > div > span {

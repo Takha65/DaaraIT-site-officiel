@@ -1,33 +1,39 @@
-import React from 'react';
+import React, { cloneElement } from "react";
 import {
   Navbar,
   MobileNav,
   Typography,
-  Button,
   IconButton,
-} from '@material-tailwind/react';
-import logo from '../../images/logo-dit.png';
-import { sidebarRoutes } from '../../routes/sidebar.routes';
-import MenuItem from '../menu/MenuItem';
-import ResourceDataMap from '../ResourceDataMap';
+} from "@material-tailwind/react";
+import logo from "../../images/logo-dit.png";
+import { sidebarRoutes } from "../../routes/sidebar.routes";
+import MenuItem from "../menu/MenuItem";
+import ResourceDataMap from "../ResourceDataMap";
 
-import './menu.css';
+import "./menu.css";
 
 const Menu = () => {
   const [openNav, setOpenNav] = React.useState(false);
 
   React.useEffect(() => {
     window.addEventListener(
-      'resize',
+      "resize",
       () => window.innerWidth >= 960 && setOpenNav(false)
     );
   }, []);
 
+  const closeMenu = () => {
+    return setOpenNav(false);
+  };
+
+  const ClonedMenuItem = ({ menuItem }) =>
+    cloneElement(<MenuItem menuItem={menuItem} />, { closeMenu });
+
   const navList = (
-    <ul className="mb-4 mt-2 flex flex-col md:gap-4 gap-1 md:p-0 p-4  lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 bg-white">
+    <ul className="mb-4 mt-2 flex flex-col items-start gap-y-3 md:gap-4 gap-1 md:p-0 p-4  lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 bg-white">
       <ResourceDataMap
         resourceData={sidebarRoutes}
-        resourceItem={MenuItem}
+        resourceItem={ClonedMenuItem}
         resourceName="menuItem"
       />
     </ul>
@@ -45,13 +51,7 @@ const Menu = () => {
         </Typography>
         <div className="flex items-center gap-4">
           <div className="mr-4 hidden lg:block">{navList}</div>
-          <Button
-            variant="gradient"
-            size="sm"
-            className="hidden lg:inline-block"
-          >
-            <span>Buy Now</span>
-          </Button>
+
           <IconButton
             variant="text"
             className="ml-auto h-6 w-6  mb-3 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden  text-gray-900"
@@ -91,12 +91,7 @@ const Menu = () => {
           </IconButton>
         </div>
       </div>
-      <MobileNav open={openNav}>
-        {navList}
-        <Button variant="gradient" size="sm" fullWidth className="mb-2">
-          <span>Buy Now</span>
-        </Button>
-      </MobileNav>
+      <MobileNav open={openNav}>{navList}</MobileNav>
     </Navbar>
   );
 };
