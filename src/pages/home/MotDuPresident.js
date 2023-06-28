@@ -12,7 +12,7 @@ const MotDuPresident =()=> {
               <img
                 src={image}
                 alt=""
-              className=""
+              className="w-full h-full"
               style={{ objectFit: 'contain' }}
               />
             </div>
