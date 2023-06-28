@@ -11,33 +11,36 @@ import 'animate.css';
 import ImageItem from '../../components/gallery/ImageItem';
 
 const ModalImage = ({open, close, children}) => {
-    if(!open){
-        return null
-    }
-    console.log('yes');
-    return createPortal(
-    <div 
-    onClick={close}
-    style={{
-        position:'fixed',
-        zIndex:'999999',
-        top:'0',
-        left:'0',
-        width:'100%',
-        height:'100vh',
-        backgroundColor:'rgba(20,30,40,0.8)',
-        display:'flex',
-        justifyContent:'center',
-        alignItems:'center',
-        cursor:'pointer'
-    }}>
-        <div 
-        className='animate__animated animate__backInUp animate__delay-0.5s'
-        style={{width:'98%', height:'95%'}}
-        >
-            {children}
-        </div>
-    </div>, document.getElementById('root'))
+  if (!open) {
+    return null;
+  }
+
+  return createPortal(
+    <div
+      onClick={close}
+      style={{
+        position: "fixed",
+        zIndex: "999999",
+        top: "0",
+        left: "0",
+        width: "100%",
+        height: "100vh",
+        backgroundColor: "rgba(20,30,40,0.8)",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        cursor: "pointer",
+      }}
+    >
+      <div
+        className="animate__animated animate__backInUp animate__delay-0.5s"
+        style={{ width: "98%", height: "95%" }}
+      >
+        {children}
+      </div>
+    </div>,
+    document.getElementById("root")
+  );
 }
 
 const GalleryPage = () => {

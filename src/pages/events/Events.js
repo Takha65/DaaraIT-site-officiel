@@ -11,7 +11,7 @@ const Events = () => {
   const [currentPageData, setCurrentPageData] = useState(new Array(3));
   return (
     <div className="w-full h-auto pb-20">
-      <Banner title="Evenements" img={BannerImg} />
+      <Banner title="Evénements" img={BannerImg} />
       <div className="eventsContent">
         <div className="filters">
           <div className="filter">

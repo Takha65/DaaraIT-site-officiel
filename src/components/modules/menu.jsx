@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { cloneElement } from "react";
 import {
   Navbar,
   MobileNav,
@@ -22,11 +22,18 @@ const Menu = () => {
     );
   }, []);
 
+  const closeMenu = () => {
+    return setOpenNav(false);
+  };
+
+  const ClonedMenuItem = ({ menuItem }) =>
+    cloneElement(<MenuItem menuItem={menuItem} />, { closeMenu });
+
   const navList = (
     <ul className="mb-4 mt-2 flex flex-col items-start gap-y-3 md:gap-4 gap-1 md:p-0 p-4  lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 bg-white">
       <ResourceDataMap
         resourceData={sidebarRoutes}
-        resourceItem={MenuItem}
+        resourceItem={ClonedMenuItem}
         resourceName="menuItem"
       />
     </ul>

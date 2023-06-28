@@ -15,7 +15,7 @@ export const sidebarRoutes = [
     // },
     {
         to: EVENTS_PATH,
-        label: "Evenements"
+        label: "Evénements"
     },
     {
         to: COMMISSION_PATH,
